@@ -1,15 +1,9 @@
-import { useState, useEffect } from "react";
-import {SiteProvider, AuthProvider} from './context';
-import Home from "./Home";
+import Home from './component/Home';
 function App() {
- 
-
   return (
-    <SiteProvider>
-      <AuthProvider>
-        <Home></Home>
-      </AuthProvider>
-    </SiteProvider>
+    <>
+      <Home />
+    </>
   );
 }
 export default App;
